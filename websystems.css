@@ -1,15 +1,29 @@
-/*nb of classes:5 / nb of ids:1 */
+/*nb of classes:9 / nb of ids:1 */
 
 @font-face {
-    font-family: Pixel;
+    font-family: 'Pixel Cowboy';
     src: url("/fonts/PixelCowboy-l7we.ttf");
 }
 
+
 *{
     box-sizing: border-box;
+    color:#e7e6b3;
 }
 
+p{
+    font-size: 20px;
+    font-family:'Apple Kid';
+}
 
+ul{
+    font-size: 20px;
+}
+
+span{
+    font-weight: bold;
+    text-decoration: underline;
+}
 
 a{
     text-decoration: none;
@@ -30,7 +44,6 @@ a:hover {
 
 
 body{
-    /*animation: scroll 60s linear infinite;*/
     background: url("/images/pattern.png");
     background-size:10%;
     background-position: top right;
@@ -41,45 +54,34 @@ body{
 
 .cent {
     display: flex;
-    justify-content: center;
     align-items: center;
-    position:absolute;
-    padding-top: 3vmin;
-    padding-bottom: 3vmin;
-    top:0%;
-    right:0%;
-    bottom:0%;
-    left:0%;
+    justify-content: center;
+    flex-direction: column;
+
 }
+
+
 
 .mainbox {
     width: 2000px;
-    max-width: 95%;
+    max-width: 90%;
     height: auto;
-    background: #39150E;
-    position: absolute;
-    border: 0.5vw solid #501B11;  
-    border-radius: 5px;
-    color: white;
+    background: #280828;
+    border-radius: 1px;
     padding:2vw;
+    box-shadow:
+    0 0 0 10px #383050,
+    0 0 0 18px #68d0b8, 
+	0 0 0 22px #f7e8a8, 
+	0 0 0 26px #3d3c55; 
     
 
   }
 
-.mainbox::after {
-    content: '';
-    position: absolute;
-    top: -1.2vw;
-    left: -1.2vw;
-    right: -1.2vw;
-    bottom: -1.2vw;
-    border-radius: 15px;
-    background: #EF952F;
-    z-index: -1;
-  }
+
 
 .topmenu{
-    font-family: Pixel;
+    font-family: 'Pixel Cowboy';
     text-align: center;
 }
 
@@ -96,7 +98,6 @@ body{
 
 .cont{
     padding-top: 1vw;
-    font-family: 'Times New Roman', Times, serif !important;
     line-height: 1.5;
 
 }
@@ -127,8 +128,21 @@ body{
     margin-bottom: 1.5vw ;
 }
 
+.invi_one{
+    height: 22px;
+    width: 90vw;
+    margin-top: 3vh;
+}
+
+.invi_two{
+    height: 22px;
+    width: 90vw;
+    margin-bottom: 3vh;
+}
+
 table,td,th{
     border: 2px solid white;
+    font-size: 20px;
 }
 
 td,th{
@@ -136,13 +150,6 @@ td,th{
     text-align: center;
 }
 
-/*
-@keyframes scroll{
-    100%{
-    background-position: 150px 1500px;
-    }
-} 
-*/
 
 @media screen and (max-width:1018px){
     .pic{
@@ -158,10 +165,8 @@ td,th{
         flex-direction: row;
         display: flex;
     }
-}
 
-@media screen and (max-height:800px) {
     .mainbox{
-        top: 0%;
+        width: 90%;
     }
 }
