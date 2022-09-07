@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'Pixel Cowboy';
-    src: url("/fonts/PixelCowboy-l7we.ttf");
+    src: url("fonts/PixelCowboy-l7we.ttf");
 }
 
 
@@ -43,7 +43,7 @@ a:hover {
 
 
 body{
-    background: url("/images/pattern.png");
+    background: url("images/pattern.png");
     background-size:10%;
     background-position: top right;
     
