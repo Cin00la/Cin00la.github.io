@@ -159,10 +159,14 @@ td,th{
     }
 
     .topmenu nav{
-        font-size: 30px;
+        font-size: 5vmax;
         justify-content: center;
         flex-direction: row;
         display: flex;
+    }
+
+    .topmenu h1{
+        font-size: 50px;
     }
 
     .mainbox{
